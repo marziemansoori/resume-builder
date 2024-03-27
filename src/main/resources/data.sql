@@ -3,6 +3,6 @@ values (1, 'foo', 'foo', 'true', 'user'),
        (2, 'bar', 'bar', 'true', 'user');
 
 
-insert into user_profile(id, user_name, theme, summary)
-values (1, 'foo', 1, 'user name foo'),
-       (2, 'bar', 2, 'user name bar');
+insert into user_profile(id, user_name, theme, summary, first_name, last_name, email, phone, designation)
+values (1, 'bill', 1, 'William Henry Gates III (born October 28, 1955) is an American businessman, investor, philanthropist, and writer best known for co-founding the software giant Microsoft, along with his childhood friend Paul Allen. During his career at Microsoft, Gates held the positions of chairman, chief executive officer (CEO), president, and chief software architect, while also being its largest individual shareholder until May 2014. He was a prominent pioneer of the microcomputer revolution of the 1970s and 1980s.', 'Bill', 'Gates', 'bill@mail.com', '0988888888', 'Founder of Microsoft'),
+       (2, 'elon', 2, 'Elon Reeve Musk, (born June 28, 1971) is a businessman and investor. He is the founder, chairman, CEO, and CTO of SpaceX; angel investor, CEO, product architect, and former chairman of Tesla, Inc.; owner, executive chairman, and CTO of X Corp.; founder of the Boring Company and xAI; co-founder of Neuralink and OpenAI; and president of the Musk Foundation. He is one of the wealthiest people in the world, with an estimated net worth of US$190 billion as of March 2024, according to the Bloomberg Billionaires Index, and $195 billion according to Forbes, primarily from his ownership stakes in Tesla and SpaceX.', 'Elon', 'Musk', 'elon@mail.com', '090000000', 'Founder, CEO, and chief engineer of SpaceX');

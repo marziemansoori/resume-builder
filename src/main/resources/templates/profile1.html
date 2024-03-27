@@ -39,11 +39,14 @@
         
             <!-- Microformats! -->
         
-            <h1 class="fn" th:text="${userId} + '\'s Profile'"></h1>
+            <h1 class="fn" th:text="${userProfile.firstName +' ' + userProfile.lastName}"></h1>
         
             <p>
-                Cell: <span class="tel">555-666-7777</span><br />
-                Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
+            <h2 th:text="${userProfile.designation}">555-666-7777</h2>
+            Cell: <span class="tel" th:text="${userProfile.phone}">555-666-7777</span><br/>
+
+            <!--            TODO:: find out how to add attribute value-->
+            Email: <a class="email" href="mailto:${userProfile.email}" th:text="${userProfile.email}">greatoldone@lovecraft.com</a>
             </p>
         </div>
                 
