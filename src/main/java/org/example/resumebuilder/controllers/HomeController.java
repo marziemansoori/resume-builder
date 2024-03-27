@@ -23,6 +23,6 @@ public class HomeController {
     @GetMapping("/profile/{userId}")
     public String profile(@PathVariable String userId, Model model) {
         model.addAttribute("userId", userId);
-        return "profile";
+        return "profile2";
     }
 }
