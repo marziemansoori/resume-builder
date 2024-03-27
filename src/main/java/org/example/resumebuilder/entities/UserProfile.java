@@ -4,6 +4,9 @@ package org.example.resumebuilder.entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Data
 public class UserProfile {
@@ -20,4 +23,7 @@ public class UserProfile {
     private String email;
     private String phone;
     private String designation;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Job> jobs;
 }
